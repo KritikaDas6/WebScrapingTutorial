@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Webook | Online Courses</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon">
+
+		<!-- fonts link  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+		<!-- css  -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- icons -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+
+	<body>
+
+	<header class="header" id="header">
+			<div class="logo">
+				</div>
+			<div class="menu-hamburger" id="toggle">
+
+			</div>
+			<nav class="navbar" id="navbar">
+					<ul class="navbar-list" id="primary-navbar" data-visiable="false">
+						
+							<li><a href="index.html" class="navbar-links">Home</a></li>
+							<li><a href="index.html/#overview" class="navbar-links">Overview</a></li>
+							<li><a href="#about" class="navbar-links">About</a></li>
+							<li><a href="#contact" class="navbar-links">Contact</a></li>
+							<li><a href="#courses" class="btn btn-get-courses"><span>Set Up</span></a></li>
+						
+					</ul>
+			</nav>
+	</header>
+
+		<main>
+			<section class="banner column-4" id="banner">
+
+					<div class="text-area">
+							<div class="text-part">
+									<h1>PROJECT 1:<span>BOOKS to SCRAPE</span> </h1>
+								<h2 class="font-bold text-white text-[30px] md:text-[100px] self-center">
+									Scrape this website: <a href="http://books.toscrape.com" target="_blank" style="TEXT-DECORATION: underline">Scrape Some Books</a>
+
+									
+								</h2>
+
+							</div>
+					</div>
+
+						<!-- <div class="relative lg:w-1/2 transition-transform duration-300 hover:-translate-y-2">
+								<img src="countries.png" width="95%" class="rounded-3xl" alt="Practice Problem 1 Image">
+						</div> -->
+						
+						<!-- Images -->
+						<div>
+								<img id="codeimage" src="code1.png" alt="Code Image" hidden>
+								<img id="answerimage" src="answer1.png" alt="Answer Image" hidden>
+						</div>
+
+						<!-- Buttons to show code and solution -->
+				
+							<div class="flex justify-around space-x-2">
+									
+								<!-- Improved styling and added onclick event for interactivity -->
+								
+										<button onclick="toggle(this);">Show Sample Code</button>
+						
+								
+										<button onclick="toggle1(this);">Show Output</button>
+								
+
+						</div>
+					
+						<!-- 
+							<div class="button-group">
+
+									<a href="#overview" class="btn btn-start-course">INPUT</a>
+
+								 <a href="#courses" class="btn btn-start-course">OUTPUT</a>
+							</div> -->
+					</div>
+
+				<script>
+					let toggle = button => {
+						let element = document.getElementById("codeimage");
+						let hidden = element.getAttribute("hidden");
+
+						if (hidden) {
+							 element.removeAttribute("hidden");
+							 img.innerText = "Hide image";
+						} else {
+							 element.setAttribute("hidden", "hidden");
+							 img.innerText = "Show image";
+						}
+					}
+					let toggle1 = button => {
+						let element = document.getElementById("answerimage");
+						let hidden = element.getAttribute("hidden");
+
+						if (hidden) {
+							 element.removeAttribute("hidden");
+							 img.innerText = "Hide image";
+						} else {
+							 element.setAttribute("hidden", "hidden");
+							 img.innerText = "Show image";
+						}
+					}
+				</script>
+
+		
+
+
+			</section>
+			
+		</main>
+	
+
+
+	
+			
+
+					
+
+					
+		
+		
+
+		
+	</body>
